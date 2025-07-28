@@ -25,9 +25,10 @@ function MoodInput(){
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        axios.post('https://localhost:5500', formData)
+        axios.post('https://localhost:5000/api/mood', formData)
         .then((response) =>{
             console.log(response.data);
+            //SEND RESPONSE TO MOVIECARD.JS
             alert("Form Submitted");
         })
         .catch((err) =>{

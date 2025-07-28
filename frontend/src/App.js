@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import MoodInput from './Components/MoodInput';
+import MoodCard from './Components/MoodCard';
 
 
 
@@ -8,6 +9,7 @@ function App() {
  return (
     <div className="App">
       <MoodInput />
+      <MoodCard />
     </div>
   );
 }
