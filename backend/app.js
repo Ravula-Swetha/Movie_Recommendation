@@ -4,10 +4,10 @@ const cors = require('cors');
 const allroutes = require('./allRoutes');
 
 
-
+app.use(express.json());
 //middleware routing
 app.use(cors());
-// app.use(express.json());
+
 
 app.use('/api', allroutes);
 
@@ -18,5 +18,5 @@ app.use('/', async(req,res)=>{
 
 // Start the server
 app.listen(5000,()=>{
-    console.log("Backend is running at port http://localhost:5000")
+    console.log("Backend is running at port https://localhost:5000")
 })

@@ -1,0 +1,17 @@
+LLM Input/output response template:
+
+Input:
+{
+  "mood": "sad",
+  "genre": "romance"
+}
+
+Output:
+{
+  "recommendations": [
+    {
+      "title": "Tamasha",
+      "reason": "Emotionally resonant and reflective"
+    }
+  ]
+}

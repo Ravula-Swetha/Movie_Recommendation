@@ -6,10 +6,11 @@ router.get('/in', (req,res) =>{
 })
 
 router.post('/mood', async(req,res) =>{
-    const {moodInput} = req.body;
+    console.log("Request body: ", req.body);
+    const {MoodInput} = req.body;
 
     try {
-        const movieRecomm = await axios.post(`${COLLAB_URL}`, {moodInput});
+        const movieRecomm = await axios.post(`${COLLAB_URL}`, {MoodInput});
         res.status(202).json({response: movieRecomm.data.mesaage});
     }
     catch (err) {
